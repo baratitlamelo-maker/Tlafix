@@ -1,1 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #6b7280;
+}
+
+/* CATEGORIES */
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.categories button {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    padding: 25px 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+    font-size: 30px;
+}
+
+.categories button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.categories span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* PROBLEM BOX */
+
+.problem-box {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.problem-box h2 {
+    margin-bottom: 10px;
+}
+
+.problem-box p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    resize: vertical;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* SOLVE BUTTON */
+
+.solve-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.solve-button:hover {
+    background: #1d4ed8;
+}
+
+/* SOLUTION */
+
+#solution {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f3f4f6;
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+}
