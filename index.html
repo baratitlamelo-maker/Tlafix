@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TlaFix - Your Tech Problem, Solved</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+    <div class="logo">🛠️ TlaFix</div>
+    <p>Your tech problem, solved.</p>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>What are you having trouble with?</h1>
+        <p>Choose a category and let TlaFix guide you through the solution.</p>
+    </section>
+
+    <section class="categories">
+
+        <button onclick="showMessage('Computer & Windows')">
+            🖥️
+            <span>Computer & Windows</span>
+        </button>
+
+        <button onclick="showMessage('Network & Internet')">
+            🌐
+            <span>Network & Internet</span>
+        </button>
+
+        <button onclick="showMessage('Wi-Fi')">
+            📶
+            <span>Wi-Fi</span>
+        </button>
+
+        <button onclick="showMessage('Printers')">
+            🖨️
+            <span>Printers</span>
+        </button>
+
+        <button onclick="showMessage('Email')">
+            📧
+            <span>Email</span>
+        </button>
+
+        <button onclick="showMessage('Files & Storage')">
+            💾
+            <span>Files & Storage</span>
+        </button>
+
+        <button onclick="showMessage('Security')">
+            🔐
+            <span>Security</span>
+        </button>
+
+        <button onclick="showMessage('Servers & Active Directory')">
+            🖥️
+            <span>Servers & Active Directory</span>
+        </button>
+
+    </section>
+
+    <section class="problem-box">
+
+        <h2>🚨 I HAVE A PROBLEM</h2>
+
+        <p>Describe your IT problem below.</p>
+
+        <textarea id="problem"
+            placeholder="Example: My computer says there is no internet..."></textarea>
+
+        <button class="solve-button" onclick="solveProblem()">
+            🔧 Find a Solution
+        </button>
+
+        <div id="solution"></div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 TlaFix | Built to make IT troubleshooting easier.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
